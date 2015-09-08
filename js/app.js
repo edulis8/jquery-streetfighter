@@ -9,4 +9,18 @@ $(document).ready(function() {
 		$('.ryu-still').show();
 	});
 
+
+	$('.ryu').mousedown(function() {
+		//play hadouken sound
+		$('.ryu-ready').hide();
+		$('.ryu-throwing').show();
+		$('.hadouken').show();
+		//animate hadouken to right of screen
+	})
+	.mouseup(function() {
+		$('.ryu-throwing').hide();
+		$('.ryu-ready').show();
+		
+	});
+
 });
