@@ -14,7 +14,14 @@ $(document).ready(function() {
 		//play hadouken sound
 		$('.ryu-ready').hide();
 		$('.ryu-throwing').show();
-		$('.hadouken').show();
+		$('.hadouken').finish().show().animate(
+			{'left': '1020px'},
+			500,
+			function(){
+				$(this).hide();
+				$(this).css('left', '595px');
+			}
+			);
 		//animate hadouken to right of screen
 	})
 	.mouseup(function() {
