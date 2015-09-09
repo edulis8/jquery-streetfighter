@@ -74,7 +74,7 @@ body {
 }
 
 .text p{
-
+	display: none;
 	width: 50%;
 	color: black;
 	font-size: 24px;
@@ -84,6 +84,36 @@ body {
 
 .text p + p {
 	margin-left: 275px;
+}
+
+.sf-logo {
+	background-image: url('../images/sf-logo.png');
+	width: 682px;
+	height: 314px;
+	display: none;
+}
+
+.jquery-logo {
+	background-image: url('../images/jquery-logo.png');
+	width: 500px;
+	height: 172px;
+	display: none;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.brought-by {
+	display: none;
+	color: red;
+	font-family: 'Souce Code Pro';
+	font-size: 50px;
+	width: 600px;
+}
+
+.brought-by {
+	text-align: center;
+	margin-top: 100px;
 }
 
 

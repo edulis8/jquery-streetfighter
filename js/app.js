@@ -1,4 +1,6 @@
 $(document).ready(function() {
+
+	doIntro();
 	
 	$('.ryu').mouseenter(function(){
 		$('.ryu-still').hide();
@@ -41,6 +43,7 @@ $(document).ready(function() {
   		if (event.which == 88) {
   			$('.ryu-still').hide();
   			$('.ryu-ready').hide();
+  			$('.ryu-throwing').hide();
 			$('.ryu-cool').show();
 	};
 }).keyup(function() { //bugs!
@@ -55,3 +58,44 @@ function playHadouken(){
 	$('#hadouken-sound')[0].load();
 	$('#hadouken-sound')[0].play();
 }
+
+
+function doIntro(){
+	$('.sf-logo').fadeIn(3500, function(){
+		$(this).fadeOut('1000', function() {
+			$('.brought-by').fadeIn(1500, function() {
+
+				$(this).fadeOut('1000', function() {
+					$('.jquery-logo').fadeIn(1500, function() {
+						$(this).fadeOut(1500, function() {
+							$('.text').fadeIn(1000, function() {
+								
+							});
+							
+						});
+						
+					});
+					
+				});
+			});
+			
+		});
+	})
+}
+
+
+/*
+
+function doIntro() {
+  $('#theme-song')[0].volume = 0.3;
+  $('#theme-song')[0].play();
+  $('.sf-logo').fadeIn(3500, function() {
+    $(this).fadeOut(1000, function() {
+      $('.brought-by').fadeIn(1500, function() {
+        $(this).fadeOut(1000, function() {
+          $('.jquery-logo').fadeIn(1500, function() {
+            $(this).fadeOut(1500, function() {
+              $('.how-to').fadeIn(1000);
+            });
+
+            */
