@@ -3,19 +3,27 @@ $(document).ready(function() {
 	doIntro();
 	
 	$('.ryu').mouseenter(function(){
-		$('.ryu-still').hide();
 		$('.ryu-ready').show();
+		$('.ryu-still').hide();
+		$('.ryu-cool').hide();
+		$('.ryu-throwing').hide();
+		
 	})
 	.mouseleave(function() {
-		$('.ryu-ready').hide();
 		$('.ryu-still').show();
+		$('.ryu-ready').hide();
+		$('.ryu-cool').hide();
+		$('.ryu-throwing').hide();
 	});
 
 
 	$('.ryu').mousedown(function() {
 		playHadouken();
-		$('.ryu-ready').hide();
 		$('.ryu-throwing').show();
+		$('.ryu-ready').hide();
+		$('.ryu-cool').hide();
+		$('.ryu-still').hide();
+	
 		$('.hadouken').finish().show().animate(
 			{'left': '1020px'},
 			500,
@@ -27,15 +35,11 @@ $(document).ready(function() {
 		//animate hadouken to right of screen
 	})
 	.mouseup(function() {
-		$('.ryu-throwing').hide();
 		$('.ryu-ready').show();
+		$('.ryu-throwing').hide();
+		$('.ryu-cool').hide();
+		$('.ryu-still').hide();
 		
-	});
-
-	$('ryu').keydown(function() {
-		alert("hi");
-
-		/* Act on the event */
 	});
 
 
