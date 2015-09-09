@@ -40,6 +40,7 @@ $(document).ready(function() {
 	$(document).keydown(function() {
   		if (event.which == 88) {
   			$('.ryu-still').hide();
+  			$('.ryu-ready').hide();
 			$('.ryu-cool').show();
 	};
 }).keyup(function() { //bugs!

@@ -59,13 +59,42 @@ body {
 	top:167px;
 }
 
-.text{
+.text-content {
 	position: absolute;
-	bottom: 0;
+	left: 650px;
+	height: 425px;
+	width: 600px;
+	padding-top: 75px;
+	font-family: 'Source Code Pro';
+}
+
+.text{
+	font-size: 50px;
+	width: 600px;
+}
+
+.text p{
+
+	width: 50%;
+	color: black;
+	font-size: 24px;
+	line-height: 45px;
+
+}
+
+.text p + p {
+	margin-left: 275px;
+}
+
+
+/*
+	position: absolute;
+	bottom: 166px;
 	left: 0;
 	text-align: center;
 	
 	width: 100%;
 	font-size: 2rem;
-	font-family: 'Source Code Pro', ;
+	font-family: 'Source Code Pro', sans-serif ;
 }
+*/
