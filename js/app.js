@@ -30,6 +30,23 @@ $(document).ready(function() {
 		
 	});
 
+	$('ryu').keydown(function() {
+		alert("hi");
+
+		/* Act on the event */
+	});
+
+
+	$(document).keydown(function() {
+  		if (event.which == 88) {
+  			$('.ryu-still').hide();
+			$('.ryu-cool').show();
+	};
+}).keyup(function() { //bugs!
+	$('.ryu-still').show();
+	$('.ryu-cool').hide();
+});
+
 });
 
 function playHadouken(){
