@@ -71,10 +71,11 @@ body {
 .text{
 	font-size: 50px;
 	width: 600px;
+	display: none;
 }
 
 .text p{
-	display: none;
+	
 	width: 50%;
 	color: black;
 	font-size: 24px;

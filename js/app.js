@@ -68,9 +68,7 @@ function doIntro(){
 				$(this).fadeOut('1000', function() {
 					$('.jquery-logo').fadeIn(1500, function() {
 						$(this).fadeOut(1500, function() {
-							$('.text').fadeIn(1000, function() {
-								
-							});
+							$('.text').fadeIn(1000);
 							
 						});
 						
